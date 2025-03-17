@@ -1,4 +1,4 @@
-class reading:
-    """
-    Class for 
-    """
+import pandas
+
+def print_excel():
+    pass

@@ -2,6 +2,4 @@
 __all__ = ["modules"]
 
 # Import the submodules
-from . import game
-from . import course
-from . import inventory_manage
+from . import reading_csv
