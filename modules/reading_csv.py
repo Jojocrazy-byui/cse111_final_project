@@ -1,4 +1,4 @@
 import pandas
 
 def print_excel():
-    pass
+    pandas.read_excel(open("Personal Finance Project.xlsx", 'rb'))
