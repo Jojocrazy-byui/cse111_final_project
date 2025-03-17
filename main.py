@@ -1,7 +1,15 @@
 from modules import reading_csv
-import pandas
-pe = reading_csv.print_excel()
+p_e = reading_csv.print_excel()
 
+def cycle():
+    print("----CSE 111: Final Project----")
+    print("Personal Finance application")
+    print("1)N.A.\t2)N.A.\t3)N.A.\t0)Exit")
+    return input('->')
 #This is main.
-data = pandas.read_excel(open("Personal Finance Project.xlsx", 'rb'))
-print(data)
+
+
+choice = cycle()
+while choice != '0':
+    print('Made it!')
+    choice = cycle()
