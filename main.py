@@ -16,11 +16,11 @@ def cycle(check_list[]): # Works by checking if the inputs are in fact the input
 validate_inputs = ['1', '2', '3', '0', '0x']
 choice = cycle(validate_inputs)
 while choice != '0':
-    if choice == '1'
+    if choice == '1':
         pass
-    elif choice == '2'
+    elif choice == '2':
         pass
-    elif choice == '3'
+    elif choice == '3':
         pass
-    elif choice == '0x'
-    choice = cycle()
+    elif choice == '0x':
+        choice = cycle()
