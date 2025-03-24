@@ -1,20 +1,24 @@
 from modules import reading_csv
-p_e = reading_csv.print_excel()
+from modules import account
 
-def cycle(check_list[]): # Works by checking if the inputs are in fact the inputs we are looking for.
+def cycle(): # Works by checking if the inputs are in fact the inputs we are looking for.
     choice = '-1'
-    while choice not in check_list[]
-    print("----CSE 111: Final Project----")
-    print("Written by Jacob Henrie, Spencer Olson, Carson Payne")
-    print("Personal Finance application")
-    print("1)N.A.\t2)N.A.\t3)N.A.\t0)Exit")
-    choice = input('->')
-    return 
-
+    while choice not in ['1', '2', '3', '0', '0x']:
+        print("----CSE 111: Final Project----")
+        print("Written by Jacob Henrie, Spencer Olson, Carson Payne")
+        print("Personal Finance application")
+        print("1)N.A.\t2)N.A.\t3)N.A.\t0)Exit")
+        choice = input('->')
+    return choice
+# 1) Account details
+#   a) Balance
+#   b) Transation list
+#   c) ...
+# 2)
+# 3)
 
 #This is main.
-validate_inputs = ['1', '2', '3', '0', '0x']
-choice = cycle(validate_inputs)
+choice = cycle()
 while choice != '0':
     if choice == '1':
         pass
@@ -24,3 +28,5 @@ while choice != '0':
         pass
     elif choice == '0x':
         choice = cycle()
+        reading_csv.print_excel()
+    choice = cycle()
