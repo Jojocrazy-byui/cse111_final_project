@@ -1,5 +1,6 @@
+# Jacob Henrie will be working on this one.
 import pandas as pd
 
 def print_excel():
-    data = pd.read_excel(open("Personal Finance Project.xlsx", 'rb'),'Sheetname')
-    print(data.iloc[1])
+    data = pd.read_excel("Personal Finance Project.xlsx",'AccountBalance')
+    print(data.iloc())

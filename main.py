@@ -27,6 +27,5 @@ while choice != '0':
     elif choice == '3':
         pass
     elif choice == '0x':
-        choice = cycle()
         reading_csv.print_excel()
     choice = cycle()
