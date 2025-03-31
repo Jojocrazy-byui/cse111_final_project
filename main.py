@@ -27,5 +27,6 @@ while choice != '0':
     elif choice == '3':
         pass
     elif choice == '0x':
-        reading_csv.print_excel()
+        account_name = input('Account Name\t->')
+        reading_csv.print_excel(account_name)
     choice = cycle()
