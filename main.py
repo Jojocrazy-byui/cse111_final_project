@@ -1,5 +1,7 @@
 from modules import reading_csv
 from modules import account
+from modules import budget
+Budget = budget.Budget
 
 def cycle(): # Works by checking if the inputs are in fact the inputs we are looking for.
     choice = '-1'
@@ -25,7 +27,9 @@ while choice != '0':
     elif choice == '2':
         pass
     elif choice == '3':
-        pass
+        bud = Budget(input("What is your account name\n->"))
+        bud.set_budget(input("What would you like your budget be for Febuary\n->"))
+        bud.trajectory
     elif choice == '0x':
         account_name = input('Account Name\t->')
         reading_csv.print_excel(account_name)
