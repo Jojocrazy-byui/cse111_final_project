@@ -15,7 +15,7 @@ def cycle(): # Works by checking if the inputs are in fact the inputs we are loo
 #   b) Transation list
 #   c) ...
 # 2)
-# 3)
+# 3) Budget
 
 #This is main.
 choice = cycle()
